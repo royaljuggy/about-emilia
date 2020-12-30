@@ -1,5 +1,5 @@
-var btnSurprise = document.getElementById("surpriseButton")
-var pSurprise = document.getElementById("surpriseText") // paragraph tag of disclaimers
+let btnSurprise = document.getElementById("surpriseButton")
+let pSurprise = document.getElementById("surpriseText") // paragraph tag of disclaimers
 
 // Update disclaimer text
 btnSurprise.addEventListener("click", function(){
