@@ -19,6 +19,15 @@ header {
 	margin: 16px;
 }
 
+p {
+	text-align: justify;
+	margin: 10px 24px;
+}
+
+button {
+	margin: 10px;
+}
+
 .container {
 	max-width: 1000px;
 	margin: 0 auto;
