@@ -1,13 +1,18 @@
+h2, h4 {
+	margin-top: 0px;
+}
+
 body {
 	margin: 0px;
 	font-family: "Open Sans", "Calibri", "Arial";
 	background-color: #9A7DCF;
+	
 }
 
 footer {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 4px 16px;
+	padding: 16px;
 	margin: 16px;
 }
 
@@ -15,7 +20,7 @@ header {
 	text-align: center;
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 25px 0px;
+	padding: 25px;
 	margin: 16px;
 }
 
@@ -58,7 +63,7 @@ button {
 .images {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 16px;
+	padding: 32px;
 	margin: 32px;
 	border-radius: 32px;
 }
@@ -79,16 +84,28 @@ button {
 	border: #9A7DCF 5px solid;
 }
 
+.quiz-container {
+	margin: 32px;
+	background: #ECECEC;
+	border: #F4D7D9 10px solid;
+	padding: 32px;
+	border-radius: 32px;
+}
+
+.quiz-container > form > * {
+	margin: 10px;
+	display: block;
+}
+
 .videos {
 	margin: 32px;
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 16px;
+	padding: 32px;
 	border-radius: 32px;
 }
 
 .video-centered {
-	border: #F4D7D9 10px solid;
 	margin-left: auto;
 	margin-right: auto;
 	width: 75%;
