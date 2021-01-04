@@ -30,8 +30,9 @@ function handleForm(event) {
             break;
         }
     }
-    
+
     const output_paragraph = document.getElementById('quiz-outcome')
+    output_paragraph.style.display = 'inline-block'
 
     if (allCorrect) {
         output_paragraph.innerText = "Correct!"

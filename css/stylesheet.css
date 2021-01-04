@@ -124,3 +124,11 @@ button {
 .nav-link:hover {
 	background-color: #dbcbd3;
 }
+
+#quiz-outcome {
+	background-color: #bda6e7;
+	font-weight: bold;
+	padding: 10px;
+	border: #F4D7D9 10px solid;
+	display: none;
+}
