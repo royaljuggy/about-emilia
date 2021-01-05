@@ -42,3 +42,46 @@ function handleForm(event) {
 }
 
 quizForm.addEventListener('submit', handleForm);
+
+// *** Carousel functionality ***
+
+const slides = document.getElementsByClassName('carousel-item');
+let slidePosition = 0;
+const totalSlides = slides.length;
+
+document.getElementById("carousel-button-prev").addEventListener('click', moveToPrevSlide);
+document.getElementById("carousel-button-next").addEventListener('click', moveToNextSlide);
+
+// assumes all slides except the current one is on display:none;
+function moveToPrevSlide() { 
+
+    slides[slidePosition].classList.remove('carousel-item-visible'); // hide current slide **
+
+    if (slidePosition === 0) { 
+        // go to end of carousel if at the first item
+        slidePosition = totalSlides - 1;
+    } else {
+        slidePosition--;
+    }
+
+    // show new slide
+    slides[slidePosition].classList.add("carousel-item-visible"); 
+}
+
+// assumes all slides except the current one is on display:none;
+function moveToNextSlide() { 
+
+    slides[slidePosition].classList.remove('carousel-item-visible'); // hide current slide **
+
+    if (slidePosition === totalSlides - 1) { 
+        // go to beginning of carousel if at last item
+        slidePosition = 0;
+    } else {
+        slidePosition++;
+    }
+
+    // show new slide
+    slides[slidePosition].classList.add("carousel-item-visible"); 
+}
+
+// *** END carousel functionality ***
