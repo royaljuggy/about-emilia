@@ -134,7 +134,7 @@ button {
 	background-color: #bda6e7;
 	font-weight: bold;
 	padding: 10px;
-	border: #F4D7D9 10px solid;
+	border-radius: 15px;
 	display: none;
 }
 
@@ -180,11 +180,12 @@ button {
 #carousel-button-next {
 	border: unset;
 	border: #F4D7D9 3px solid;
+	background-color: #ECECEC;
     border-radius: 50px;
     font-weight: bold;
     font-size: 15px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 	cursor: pointer;
 }
 
