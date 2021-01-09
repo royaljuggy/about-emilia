@@ -1,9 +1,9 @@
 h2, h4 {
-	margin-top: 0px;
+	margin-top: 0;
 }
 
 body {
-	margin: 0px;
+	margin: 0;
 	/* Old> font-family: "Open Sans", "Calibri", "Arial"; */
 	font-family: 'Quicksand', sans-serif;
 	background-color: #9A7DCF;
@@ -13,7 +13,7 @@ body {
 header, footer {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 16px;
+	padding: 1.25em;
 }
 header {
 	text-align: center;
@@ -21,11 +21,11 @@ header {
 
 p {
 	text-align: justify;
-	margin: 10px 24px;
+	margin: 1em;
 }
 
 button {
-	margin: 10px;
+	margin: 1em;
 }
 
 .title,
@@ -34,7 +34,8 @@ button {
 }
 
 .container {
-	max-width: 1000px;
+	width: 90%;
+    max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -47,17 +48,21 @@ button {
 .intro-emilia, .intro-rezero, .videos, .quiz-container {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 32px;
-	margin: 32px;
-	border-radius: 32px;
+	padding: 2em;
+	margin: 2em;
+	border-radius: 2em;
 }
 
 .images {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
-	padding: 32px;
-	margin: 32px;
-	border-radius: 32px;
+	padding: 2em;
+	margin: 2em;
+	border-radius: 2em;
+}
+
+.background {
+	background-color: #F4D7D9;
 }
 
 .columns {
@@ -66,8 +71,8 @@ button {
 
 .column {
 	flex: 33.33%;
-	padding: 5px;
-	margin: 10px;
+	padding: 0.4em;
+	margin: 1em;
 }
 
 .column-image {
@@ -78,7 +83,7 @@ button {
 
 
 .quiz-container > form > * {
-	margin: 10px;
+	margin: 1em;
 	display: block;
 }
 
@@ -90,7 +95,7 @@ button {
 }
 
 .disclaimers {
-	margin-bottom: 0px;
+	margin-bottom: 0;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -109,25 +114,71 @@ button {
 	visibility: hidden;
 }
 
-.topnav {
-	background-color: #ECECEC;
-	margin-top: 10px;
+/* Navigation */
+/* 'Mobile first' approach */
+.flex {
+	display: flex;
+}
+
+.nav {
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F4D7D9;
+	padding: 0 2em;
+}
+
+.nav-title {
+	padding: 0.5em;
+	font-size: 3rem;
+	text-decoration: underline;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	min-width: 70%;;
 }
 
 .nav-link {
 	font-family: 'Quicksand', sans-serif;
-	background-color: #F4D7D9;
 	display: inline-block;
+	background-color: #ECECEC;
 	text-align: center;
 	text-decoration: none;
-	padding: 10px 16px;
-	margin: 0;
-	font-weight: 600;
-	font-size: 30px;
+	padding: 0.35em 0.6em;
+	margin: 0.5em;
+	font-weight: 700;
+	font-size: 1.9rem;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
 	background-color: #dbcbd3;
+}
+
+.nav-link:focus {
+	color: black;
+}
+
+.current-page {
+	text-decoration: underline;
+}
+
+.current-page:hover,
+.current-page:focus {
+	background-color: #ECECEC;
+}
+
+/* Responsive layout for nav-bar*/
+@media (min-width: 750px) {
+	.nav {
+		flex-direction: row;
+	}
+
+	.nav-links {
+		flex-direction: row;
+	}
 }
 
 #quiz-outcome {
