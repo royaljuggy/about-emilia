@@ -14,7 +14,9 @@ header, footer {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
 	padding: 1.25em;
+	border-radius: 2em;
 }
+
 header {
 	text-align: center;
 }
@@ -45,15 +47,7 @@ button {
 	margin: 0 auto;
 }
 
-.intro-emilia, .intro-rezero, .videos, .quiz-container {
-	background: #ECECEC;
-	border: #F4D7D9 10px solid;
-	padding: 2em;
-	margin: 2em;
-	border-radius: 2em;
-}
-
-.images {
+.intro-emilia, .intro-rezero, .videos, .quiz-container, .images {
 	background: #ECECEC;
 	border: #F4D7D9 10px solid;
 	padding: 2em;
