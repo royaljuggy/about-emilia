@@ -36,9 +36,12 @@ button {
 }
 
 .container {
-	width: 90%;
     max-width: 1000px;
 	margin: 0 auto;
+}
+
+.margin {
+	margin: 2em auto;
 }
 
 .center {
@@ -81,6 +84,21 @@ button {
 	display: block;
 }
 
+#quiz-outcome {
+	background-color: #bda6e7;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 15px;
+	display: none;
+}
+
+.info-container {
+	border-radius: 2em;
+}
+
+.info {
+	padding: 1em 1.25em;
+}
 
 .video-centered {
 	text-align: center;
@@ -110,6 +128,7 @@ button {
 
 /* Navigation */
 /* 'Mobile first' approach */
+/* TODO: add an absolute position (scroll bar shifts navbar!) */
 .flex {
 	display: flex;
 }
@@ -118,8 +137,8 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	background-color: #F4D7D9;
 	padding: 0 2em;
+	border-radius: 2em;
 }
 
 .nav-title {
@@ -175,12 +194,9 @@ button {
 	}
 }
 
-#quiz-outcome {
-	background-color: #bda6e7;
-	font-weight: bold;
-	padding: 10px;
-	border-radius: 15px;
-	display: none;
+/* Change font size */
+.small-nav * {
+	font-size: 1.5rem;
 }
 
 /* Carousel functionality */
